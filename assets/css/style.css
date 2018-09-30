@@ -13,6 +13,15 @@
 a{
     text-decoration: none;
 }
+.time {
+    text-align: right;
+}
+header h6 {
+    height: 24px;
+}
+.coin img {
+    vertical-align: bottom;
+}
 @font-face {
   font-family: 'indigo-regular';
   src: url('../fonts/indigo-regular.eot'); /* IE9 Compat Modes */
@@ -1097,6 +1106,14 @@ header {
 }
 .control, .pause, .play-pause {
 font-size: 25px;
+}
+.pause, .play-pause, .next-arrow, .prev-arrow {
+  transition: opacity .3s;
+  cursor: pointer;
+}
+.pause:hover, .play-pause:hover,
+.next-arrow:hover, .prev-arrow:hover {
+  opacity: 0.3;
 }
 .bg {
     position: absolute;

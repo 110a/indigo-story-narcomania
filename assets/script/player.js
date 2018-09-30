@@ -14,7 +14,7 @@ $('.sound').value = 0;
 function playList() {
     var quantity = audioArr.length;
     for (let i=0; i< quantity; i++){
-        if(i+1>=10){
+        if(i+1>=8){
             $('.audio-files ul').append("<li class='for-nav'><p data-src='"+audioArr[i].src+"'>"+$(audioArr[i]).attr("data-name")+" <span>"+([i+1])+"</span></p></li>");
         }
         else {
@@ -72,7 +72,7 @@ $('.audio-files ul li.for-nav p').click(function () {
                 audio.play();
             }
             currIndex=i;
-            if(currIndex + 1<10){$('.currIndex').html(0+ (currIndex + 1).toString());}
+            if(currIndex + 1<8){$('.currIndex').html(0+ (currIndex + 1).toString());}
             else{$('.currIndex').html(currIndex + 1);}
         }
     }
@@ -132,7 +132,7 @@ function  nextMusic() {
             $(imageArr[9]).addClass("active-Id");
 
         }
-        if(currIndex==10){
+        if(currIndex==8){
             $(imageArr[0]).addClass("active-Id");
             var translate = (currIndex * 2);
             console.log(translate);
@@ -160,7 +160,7 @@ function  nextMusic() {
         else{
             audio.pause();
         }
-        if (currIndex + 1 <10){
+        if (currIndex + 1 <8){
           $('.currIndex').html("0" + (currIndex + 1).toString());
         }
         else {
@@ -208,7 +208,7 @@ function prevMusic() {
         }
         $(navigation[currIndex]).addClass('active-title');
         $(imageArr[currIndex]).addClass("active-Id");
-        if (currIndex + 1<10){$('.currIndex').html("0" + (currIndex + 1).toString());}
+        if (currIndex + 1<8){$('.currIndex').html("0" + (currIndex + 1).toString());}
         else{$('.currIndex').html(currIndex + 1);}
     },1000);
 

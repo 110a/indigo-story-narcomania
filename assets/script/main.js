@@ -16,7 +16,7 @@ function startFunction(){
 
     $('.control').toggleClass('pause play-pause');
 
-    $('.audio-files p:contains("პირველი სათაური")').addClass('active-title');
+    $('.audio-files p:contains("1 პირველი სათაური")').addClass('active-title');
     if(audio.paused===true){
         audio.play();
         isPlaying = true;
@@ -46,9 +46,9 @@ function startFunction(){
                     currIndex = i;
                 }
             }
-            if(currIndex+1<10){$('.currIndex').html("0" + (currIndex+1).toString())}
+            if(currIndex+1<8){$('.currIndex').html("0" + (currIndex+1).toString())}
             else {$('.currIndex').html(currIndex+1);}
-            if(audioArr.length<10){$('.whole-number').html("0" + audioArr.length);}
+            if(audioArr.length<8){$('.whole-number').html("0" + audioArr.length);}
             else{$('.whole-number').html(audioArr.length);}
             timing();
         });
