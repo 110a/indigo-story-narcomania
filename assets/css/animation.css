@@ -1,0 +1,470 @@
+/* section 01 */
+.man {
+  width: 250px;
+  z-index: 1;
+  transform: translate(-50%, 0%);
+}
+.pill {
+  width: 15px;
+  left: 45%;
+}
+.pill {
+ animation-name: pill;
+ animation-duration: 11s;
+ animation-iteration-count: infinite;
+ animation-timing-function: ease-out;
+ animation-play-state: paused;
+}
+.active-Id .pill {
+ animation-play-state: running;
+  animation-delay: 4s;
+}
+@keyframes pill {
+  0%   { top: -200px; }
+  100% { top: 130%;}
+}
+/* section 02 */
+.woman {
+    width: 80px;
+    bottom: 6px;
+    opacity: 0.75;
+    z-index: 1;
+}
+.weather {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+}
+.weather:before, .weather:after {
+    content: "";
+    position: absolute;
+    left: -50%; top: -50%; right: -50%; bottom: -50%;
+    z-index: 1;
+    pointer-events: none;
+
+    background: transparent repeat;
+    opacity: 0.8;
+     -webkit-transform: rotate(-60deg);
+    transform: rotate(-60deg);
+
+    -webkit-animation-name: weather;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-name: weather;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 7s;
+}
+
+.weather.snow:before, .weather.snow:after {
+    background-image: url(../images/section-02-woman-rain.png);
+    -webkit-animation-duration: 6s;
+    animation-duration: 9s;
+    animation-delay: 4s;
+    animation-play-state: paused;
+}
+.weather.snow:after {
+    -webkit-animation-duration: 4.5s;
+    animation-duration: 15s;
+    animation-delay: 3s;
+    animation-play-state: paused;
+}
+.active-Id .weather.snow:after {
+  animation-play-state: running;
+  animation-delay: 2s;
+}
+.active-Id .weather.snow:before {
+  animation-play-state: running;
+  animation-delay: 3s;
+}
+@-webkit-keyframes weather {
+    from { background-position: 0 0px; }
+    to { background-position: 0 1024px; }
+}
+@keyframes weather {
+    from { background-position: 0 0px; }
+    to { background-position: 0 1024px; }
+}
+@-webkit-keyframes weather2 {
+    from { background-position: 64px 64px; }
+    to { background-position: 64px 1088px; }
+}
+@keyframes weather2 {
+    from { background-position: 64px 64px; }
+    to { background-position: 64px 1088px; }
+}
+/* section 03 */
+.shelf-01 {
+    position: absolute;
+    width: 120px;
+    top: 30%;
+    left: 50%;
+}
+.shelf {
+  width: 120px;
+}
+.shelf-pill {
+  width: 15px;
+  margin-bottom: 10px;
+  margin-left: 25px;
+  vertical-align: bottom;
+}
+.shelf-nemsi {
+  width: 35px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  vertical-align: bottom;
+}
+.shelf-kovzi {
+  width: 40px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  vertical-align: bottom;
+}
+.shelf-cocaine {
+   width: 55px;
+   margin-bottom: 5px;
+   margin-left: 5px;
+   vertical-align: bottom;
+}
+.shelf-02 {
+    position: absolute;
+    width: 120px;
+    bottom: 30%;
+    right: 20%;
+}
+.shelf-03 {
+    position: absolute;
+    width: 120px;
+    bottom: 30%;
+    left: 20%;
+}
+.shelf-kovzi {
+  opacity: 0;
+ animation-name: shelf-nemsi;
+ animation-play-state: paused;
+  animation-direction: alternate;
+ animation-delay: 5s;
+ animation-duration: 5s;
+ animation-iteration-count: infinite;
+ animation-timing-function: ease-out;
+}
+.shelf-cocaine {
+  opacity: 0;
+ animation-name: shelf-pill;
+ animation-play-state: paused;
+ animation-delay: 5s;
+ animation-iteration-count: infinite;
+ animation-direction: alternate;
+ animation-duration: 5s;
+}
+.shelf-pill {
+  opacity: 0;
+ animation-name: shelf-pill;
+ animation-play-state: paused;
+ animation-delay: 9s;
+ animation-duration: 3s;
+ animation-direction: alternate;
+ animation-iteration-count: infinite;
+ animation-timing-function: ease-out;
+}
+.shelf-nemsi {
+  opacity: 0;
+  transform: translate(0px, 10px);
+ animation-name: shelf-nemsi;
+ animation-play-state: paused;
+ animation-delay: 7s;
+ animation-duration: 3s;
+  animation-direction: alternate;
+
+ animation-iteration-count: infinite;
+ animation-timing-function: ease-out;
+}
+.active-Id .shelf-pill,
+.active-Id .shelf-nemsi,
+.active-Id .shelf-kovzi,
+.active-Id .shelf-cocaine {
+ animation-play-state: running;
+}
+@-webkit-keyframes shelf-pill {
+    0% {
+    opacity: 0;
+    transform: translate(0px, 10px);
+    }
+    100% {
+    opacity: 1;
+      transform: translate(0px, 1px);
+    }
+}
+@-webkit-keyframes shelf-nemsi {
+    0% {
+    opacity: 0;
+    transform: translate(30px, 10px);
+    }
+    100% {
+    opacity: 1;
+      transform: translate(-10px, 1px);
+    }
+}
+/* section 4 */
+.Id4 img {
+    opacity: 0.4;
+}
+img.clousd-01 {
+    width: 150px;
+    position: absolute;
+    top: 100px;
+    left: 10%;
+}
+img.clousd-02 {
+    width: 120px;
+    position: absolute;
+    top: 100px;
+    left: 40%;
+}
+img.clousd-03 {
+    width: 180px;
+    position: absolute;
+    top: 30%;
+    left: 70%;
+}
+img.jumping-man-0402 {
+    width: 150px;
+}
+img.jumping-man-0403 {
+    width: 200px;
+}
+img.jumping-man-0404 {
+    width: 100px;
+}
+img.jumping-man-0405 {
+    width: 200px;
+}
+img.jumping-man-0406 {
+    width: 130px;
+}
+
+.clousd-03 {
+ animation-name: cloud;
+ transform: translate(0px, -800%);
+ animation-play-state: paused;
+ animation-delay: 7s;
+ animation-duration: 3s;
+  animation-direction: alternate;
+ animation-iteration-count: infinite;
+ animation-timing-function: ease-out;
+}
+.clousd-01 {
+ animation-name: cloud-one;
+ transform: translate(0px, -800%);
+ animation-delay: 3s;
+ animation-duration: 5s;
+  animation-direction: alternate;
+ animation-iteration-count: infinite;
+ animation-timing-function: ease-out;
+}
+.clousd-02 {
+ animation-name: cloud-two;
+ transform: translate(0px, -800%);
+ animation-delay: 9s;
+ animation-duration: 12s;
+  animation-direction: alternate;
+ animation-iteration-count: infinite;
+ animation-timing-function: ease-out;
+}
+.active-Id .clousd-01,
+.active-Id .clousd-02,
+.active-Id .clousd-03 {
+ animation-play-state: running;
+}
+@-webkit-keyframes cloud {
+    0% {
+    transform: translate(0px, -700%);
+    }
+    100% {
+      transform: translate(0px, 50%);
+    }
+}
+@-webkit-keyframes cloud-one {
+    0% {
+    transform: translate(0px, -700%);
+    }
+    100% {
+      transform: translate(0px, 90%);
+    }
+}
+@-webkit-keyframes cloud-two {
+    0% {
+    transform: translate(0px, -700%);
+    }
+    100% {
+      transform: translate(0px, 80%);
+    }
+}
+img.jumping-man-0402 {
+    width: 150px;
+}
+img.jumping-man-0403 {
+    width: 200px;
+}
+img.jumping-man-0404 {
+    width: 100px;
+}
+img.jumping-man-0405 {
+    width: 200px;
+}
+img.jumping-man-0406 {
+    width: 130px;
+}
+
+.clousd-03 {
+ animation-name: cloud;
+ transform: translate(0px, -800%);
+ animation-play-state: paused;
+ animation-delay: 7s;
+ animation-duration: 3s;
+   animation-play-state: paused;
+  animation-direction: alternate;
+ animation-iteration-count: infinite;
+ animation-timing-function: ease-out;
+}
+.clousd-01 {
+ animation-name: cloud-one;
+ transform: translate(0px, -800%);
+ animation-delay: 3s;
+ animation-duration: 5s;
+   animation-play-state: paused;
+  animation-direction: alternate;
+ animation-iteration-count: infinite;
+ animation-timing-function: ease-out;
+}
+.clousd-02 {
+ animation-name: cloud-two;
+ transform: translate(0px, -800%);
+ animation-delay: 9s;
+ animation-duration: 12s;
+  animation-play-state: paused;
+  animation-direction: alternate;
+ animation-iteration-count: infinite;
+ animation-timing-function: ease-out;
+}
+.active-Id .clousd-01,
+.active-Id .clousd-02,
+.active-Id .clousd-03 {
+ animation-play-state: running;
+}
+@-webkit-keyframes cloud {
+    0% {
+    transform: translate(0px, -700%);
+    }
+    100% {
+      transform: translate(0px, 50%);
+    }
+}
+@-webkit-keyframes cloud-one {
+    0% {
+    transform: translate(0px, -700%);
+    }
+    100% {
+      transform: translate(0px, 90%);
+    }
+}
+@-webkit-keyframes cloud-two {
+    0% {
+    transform: translate(0px, -700%);
+    }
+    100% {
+      transform: translate(0px, 80%);
+    }
+}
+.jumping-man-0402,
+.jumping-man-0403,
+.jumping-man-0404,
+.jumping-man-0405,
+.jumping-man-0406 {
+  animation-play-state: paused;
+}
+.active-Id .jumping-man-0402,
+.active-Id .jumping-man-0403,
+.active-Id .jumping-man-0404,
+.active-Id .jumping-man-0405,
+.active-Id .jumping-man-0406 {
+  animation-play-state: running;
+}
+.jumping-man-0402,
+.jumping-man-0403,
+.jumping-man-0404,
+.jumping-man-0405,
+.jumping-man-0406 {
+  position: absolute;
+  bottom: -500px;
+}
+.jumping-man-0402 {
+  left: 10px;
+}
+.jumping-man-0403 {
+    left: 20%;
+}
+.jumping-man-0404 {
+    left: 50%;
+}
+.jumping-man-0405 {
+   right: 30%;
+   animation-name: jumping-man-0405;
+ animation-delay: 9s;
+ animation-duration: 3s;
+  animation-play-state: paused;
+  animation-direction: alternate;
+ animation-iteration-count: infinite;
+ animation-timing-function: ease-out;
+}
+@-webkit-keyframes jumping-man-0405 {
+    0% {
+    bottom: -500px;
+    }
+    100% {
+      bottom: 60%;
+    }
+}
+/* section 05 */
+img.man-back {
+    position: absolute;
+    bottom: 0px;
+    width: 100px;
+    opacity: 0.4;
+    left: 40%;
+    z-index: 100;
+}
+.weather:before, .weather:after {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+.weather.kovzi {
+  animation-name: kovzebi;
+}
+.weather.kovzi:before, .weather.kovzi:after {
+    background-image: url(../images/section-05/05-kovzi.png);
+    -webkit-animation-duration: 6s;
+    animation-duration: 9s;
+    animation-delay: 4s;
+    animation-play-state: paused;
+}
+.weather.kovzi:after {
+    -webkit-animation-duration: 4.5s;
+    animation-duration: 15s;
+    animation-delay: 3s;
+    animation-play-state: paused;
+}
+.active-Id .weather.kovzi:after {
+  animation-play-state: running;
+  animation-delay: 2s;
+}
+.active-Id .weather.kovzi:before {
+  animation-play-state: running;
+  animation-delay: 3s;
+}
+@keyframes kovzebi {
+    from { background-position: 0 0px; }
+    to { background-position: 1024px 0px; }
+}
