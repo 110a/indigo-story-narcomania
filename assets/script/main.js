@@ -54,7 +54,7 @@ function startFunction(){
         });
 
         $('.title').addClass('subtitle');
-        $('.title').html("პირველი სათაური");
+        $('.title').html("ერთადერთი თავშესაფარი - ძილი");
     },1500);
 
 }
