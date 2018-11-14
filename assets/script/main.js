@@ -34,11 +34,11 @@ function startFunction(){
     },1000);
 
     setTimeout(function () {
-        $('.controll-buttons').css({display:"inline-block"});
+        $('.controll-buttons').css({display:"block"});
         $('.progress').css({display:"inline-block"});
         $('.time-counter').css({opacity:"1"});
         $('.sound-controll').css({display:"inline-block"});
-        $('.circle-play').css({display:"none"});
+        $('.circle-play').fadeOut();
 
         $(function indexing() {
             for(var i =0; i<audioArr.length; i++){
@@ -55,7 +55,7 @@ function startFunction(){
 
         $('.title').addClass('subtitle');
         $('.title').html("ერთადერთი თავშესაფარი - ძილი");
-    },1500);
+    },1000);
 
 }
 
@@ -63,17 +63,6 @@ $('.circle-play').click(function () {
     startFunction();
 });
 
-// $('.about .play-first').click(function () {
-//     $('.player-holder').css({display:"inline-block"});
-//     $('#audio-title').css({display:"inline-block"});
-//     $('.about').css({display:"none"});
-//     $('.about-project ').removeClass('active-title');
-//     audio.src='Assets/Audio/1.mp3';
-//     $('.ids').removeClass('active-Id');
-//     $('.id1').addClass('active-Id');
-//     $('.currIndex').html("00");
-//     startFunction();
-// });
 
 $('.fb-share-button').click(function () {
    console.log(1);

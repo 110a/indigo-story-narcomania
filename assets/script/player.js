@@ -59,7 +59,7 @@ $('.audio-files ul li.for-nav p').click(function () {
     $('.control').addClass('pause');
 
     $('.player-holder').css({display:"inline-block"});
-    $('#audio-title').css({display:"inline-block"});
+    // $('#audio-title').css({display:"inline-block"});
     $('.about').css({display:"none"});
 
     $('.audio-files p').removeClass('active-title');
