@@ -71,40 +71,48 @@ body{
 }
 .about{
     display: none;
+    width: calc(100% - 80px);
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 1000;
+    top: 0px;
+    padding-right: 80px;
+    right: 0px;
 }
 
 .about-title {
-    font-size: 50px;
+    font-size: 30px;
     font-weight: normal;
-    margin-top: 60px;
+    margin-top: 80px;
 }
 .indigo-team {
-    margin-top: 60px;
-        color: #3b4960;
+    margin-top: 40px;
+
 }
 .content {
     min-height: 80vh;
     text-align: center;
+    color: #ece1e1;
 }
 .about .footer {
-  margin: 100px auto 40px auto;
-  padding-left: 5%;
-}
+  margin: 0px auto 20px auto;
+  }
 .about p {
-  width: 80%;
+  color: #ece1e1;
   text-align: center;
   font-family: 'bpg-nino-medium-condenced';
-  font-size: 12px;
-  line-height: 22px;
+  font-size: 10px;
+  width: 80%;
+  line-height: 18px;
   margin: 0px auto 40px auto;
 }
 .regular {
   font-family: 'bpg-nino-medium-condenced';
-  font-size: 18px;
+  font-size: 16px;
   font-weight: normal;
 }
 .capital {
-   font-size: 36px;
+   font-size: 26px;
    font-weight: normal;
 }
 ul li{
@@ -768,25 +776,27 @@ input[type=range]:focus::-ms-fill-upper {
     background: #333333;
     transition: transform .3s, width .3s;
 }
-.audio-files{
-    font-size: 12px;
-    width: 250px;
-    position: absolute;
-    right: 0;
-    top: 50%;
-    width: 50%;
-    transform: translate(0%, -50%);
-    height: auto;
-    text-align: right;
-/*     background: url("../images/bg.gif") repeat; */
-    z-index: 150;
-/*     background-position: left top; */
-/*     background-repeat: repeat */
-    /* border-left: 1px solid #ccc; */
-    /* overflow: hidden; */
-    display: none;
-    box-sizing: border-box;
-    padding: 20px;
+ .navigation-list {
+ 
+} 
+aside.audio-files {
+  position: absolute;
+  font-size: 12px;
+  width: 100%;
+  text-align: right;
+  right: 0;
+  top: 0px;
+  height: 100vh;
+  width: 100%;
+  background-image:url('../../img/bg-01.jpg');
+  background-size: cover;
+  text-align: right;
+  padding: 100px 20px;
+  box-sizing: border-box;
+  z-index: 150;
+  display: none;
+  box-sizing: border-box;
+  z-index: 1;
 }
 .audio-files ul li {
     margin-bottom: 5px;
@@ -1074,6 +1084,7 @@ header {
   height: 50px;
   -webkit-transition: opacity 150ms;
   transition: opacity 150ms;
+  z-index: 2000;
 }
 .title {
   display: inline-block;
@@ -1179,3 +1190,18 @@ font-size: 25px;
     float: left;
 }
 /* news end*/
+.simplebar-content {
+    width: 100vw;
+}
+.simplebar-scrollbar:before {
+    background-color: red;
+    border-radius: 0px;
+    display: none;
+}
+
+.simplebar-scrollbar {
+    border-radius: 0px;
+    right: 0px;
+    width: 9px;
+    background-color: #e9dede;
+}

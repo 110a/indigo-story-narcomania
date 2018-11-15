@@ -3,8 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <title>ერთი დღე, ერთი რაუნდი | ინდიგო</title>
+  <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.min.css" />
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <link rel="stylesheet" type="text/css" href="assets/css/animation.css">
+
+
   <!-- <link rel="stylesheet" type="text/css" href="assets/css/responsive.css"> -->
 
   <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
@@ -66,49 +69,57 @@
         <h1 class="title">ერთი დღე, ერთი რაუნდი</h1>
       </div>
     </header>
-    <div class="audio-files">
+    <aside class="audio-files" data-simplebar data-simplebar-auto-hide="false">
+    <div class="audio-files-titles">
       <ul>
         <li><p class="about-project">პროექტის შესახებ</p></li>
       </ul>
     </div>
+  </aside>
     <div class="loader">
       <div class="loader-img">
         <img src="assets/images/loader-02.gif" alt="">
       </div>
     </div>
     <div id="central-container">
-      <div class="slider">
-        <div class="about">
-          <div class="content">
-            <h5 class="about-title">პროექტის შესახებ</h5>
-            <div class="indigo-team">
-              <h4 class="capital">ტექსტი</h4>
-              <h3 class="regular">მარიამ აბესაძე, ნინო ლომაძე</h3>
-            </div>
-            <div class="indigo-team">
-              <h4 class="capital">ილუსტრაცია</h4>
-              <h3 class="regular"> მარიამ ზალდასტანიშვილი</h3>
-            </div>
-            <div class="indigo-team">
-              <h4 class="capital">მულტიმედია დიზაინი</h4>
-              <h3 class="regular"> ანი ასათიანი </h3>
-            </div>
-            <div class="indigo-team">
-              <h4 class="capital">ვებ დეველოპერი</h4>
-              <h3 class="regular"> მახო გელაშვილი </h3>
-            </div>
-            <div class="indigo-team">
-              <h4 class="capital">ხმის დიზაინი</h4>
-              <h3 class="regular"> მარიამ აბესაძე </h3>
-            </div>
+      <div class="about" data-simplebar data-simplebar-auto-hide="false">
+        <div class="about-text">
+        <div class="content">
+          <h5 class="about-title">პროექტის შესახებ</h5>
+          <div class="indigo-team">
+            <h4 class="capital">ტექსტი</h4>
+            <h3 class="regular">მარიამ აბესაძე, ნინო ლომაძე</h3>
           </div>
-          <div class="footer">
-            <p>მომზადებულია ფონდ „ღია საზოგადოება - საქართველოს“ ფინანსური მხარდაჭერით. ავტორის/ავტორების მიერ საინფორმაციო მასალაში გამოთქმული მოსაზრება შესაძლოა არ გამოხატავდეს ფონდის პოზიციას. შესაბამისად, ფონდი არ არის პასუხისმგებელი მასალის შინაარსზე.</p>
-
+          <div class="indigo-team">
+            <h4 class="capital">ილუსტრაცია</h4>
+            <h3 class="regular"> მარიამ ზალდასტანიშვილი</h3>
           </div>
+          <div class="indigo-team">
+            <h4 class="capital">მულტიმედია დიზაინი</h4>
+            <h3 class="regular"> ანი ასათიანი </h3>
+          </div>
+          <div class="indigo-team">
+            <h4 class="capital">ვებ დეველოპერი</h4>
+            <h3 class="regular"> მახო გელაშვილი </h3>
+          </div>
+          <div class="indigo-team">
+            <h4 class="capital">ხმის დიზაინი</h4>
+            <h3 class="regular"> მარიამ აბესაძე </h3>
+          </div>
+        </div>
+        <div class="footer">
+          <p>მომზადებულია ფონდ „ღია საზოგადოება - საქართველოს“ ფინანსური მხარდაჭერით. ავტორის/ავტორების მიერ საინფორმაციო მასალაში გამოთქმული მოსაზრება შესაძლოა არ გამოხატავდეს ფონდის პოზიციას. შესაბამისად, ფონდი არ არის პასუხისმგებელი მასალის შინაარსზე.</p>
 
         </div>
-
+        <!-- <div class="read-article">
+          <a href="http://indigo.com.ge/articles/people/ana-irina-elene-da-sxvebi" target="_blank">
+            <p>სტატიის წაკითხვა</p>
+            <span class="arrow-right"></span>
+          </a>
+        </div> -->
+      </div>
+      </div>
+      <div class="slider">
         <div class="Id1 ids">
           <figure>
             <img class="man bottom" src="assets/images/section-01-prison.png" alt="პირველი სათაური">
@@ -273,6 +284,7 @@
                     <script src="assets/script/jquery-3.3.1.min.js"></script>
                     <script src="assets/script/main.js"></script>
                     <script src="assets/script/player.js"></script>
+                    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.js"></script>
 
                   </body>
                   </html>

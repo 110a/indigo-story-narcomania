@@ -31,12 +31,15 @@ $(navigation[0]).addClass("active-title");
 
 $('.about-project').click(function () {
     $('.audio-files ul li.for-nav p').removeClass('active-title');
+    $('.time').fadeOut();
+    $('.coin').fadeOut();
+    $('.world').fadeOut();
     $(this).addClass("active-title");
     audio.pause();
     $('.control').addClass('pause');
     $('.ids').removeClass('active-Id');
     $('.player-holder').css({display:"none"});
-    $('#audio-title').css({display:"none"});
+    $('#audio-title .title').css({display:"none"});
     $('.about').css({display:"block"});
     audio.currentTime = 0;
     $('.control').removeClass('pause');
@@ -49,17 +52,25 @@ $('.about-project').click(function () {
 $('.playlistButton').click(function () {
     $('.audio-files').fadeToggle();
     $(this).toggleClass('active');
+    $('.about').css({display:"none"});
+    $('.time').fadeOut();
+    $('.coin').fadeOut();
+    $('.world').fadeOut();
 });
 
 $('.audio-files ul li.for-nav p').click(function () {
     $('.audio-files').fadeToggle();
     $('.playlistButton').toggleClass('active');
 
+    $('.time').fadeIn();
+    $('.coin').fadeIn();
+    $('.world').fadeIn();
+
     $('.control').removeClass('play-pause');
     $('.control').addClass('pause');
 
     $('.player-holder').css({display:"inline-block"});
-    // $('#audio-title').css({display:"inline-block"});
+    $('#audio-title .title').css({display:"inline-block"});
     $('.about').css({display:"none"});
 
     $('.audio-files p').removeClass('active-title');
