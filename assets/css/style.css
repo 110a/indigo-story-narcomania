@@ -1213,3 +1213,25 @@ font-size: 25px;
     width: 9px;
     background-color: #e9dede;
 }
+@media screen and (max-width: 640px) {
+  header {
+  padding: 20px 15px 0px 15px;
+}
+.logo {
+  width: 20px;
+}
+.title {
+  font-size: 20px;
+}
+.counter, .coin span, .worl-count, .time-counter {
+  font-size: 14px;
+  height: 30px;
+  display: inline-block;
+  vertical-align: top;
+}
+.coin img {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: -4px;
+}
+}
