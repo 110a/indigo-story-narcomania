@@ -1,6 +1,0 @@
-header.full-width.main.specialpage.ilustration.bottom {
-    display: none;
-}
-header.full-width.main.specialpage.ilustration.bottom + section {
-    background-image: url(/multimedia/anna/assets/images/bg.gif);
-}

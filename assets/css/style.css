@@ -785,8 +785,8 @@ input[type=range]:focus::-ms-fill-upper {
     transition: transform .3s, width .3s;
 }
  .navigation-list {
- 
-} 
+
+}
 aside.audio-files {
   position: absolute;
   font-size: 12px;
@@ -796,7 +796,7 @@ aside.audio-files {
   top: 0px;
   height: 100vh;
   width: 100%;
-  background-image:url('../../img/bg-01.jpg');
+  background-image:url('../images/bg-01.jpg');
   background-size: cover;
   text-align: right;
   padding: 100px 20px;
