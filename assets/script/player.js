@@ -83,7 +83,7 @@ $('.audio-files ul li.for-nav p').click(function () {
                 audio.play();
             }
             currIndex=i;
-            if(currIndex + 1<8){$('.currIndex').html(0+ (currIndex + 1).toString());}
+            if(currIndex + 1<10){$('.currIndex').html(0+ (currIndex + 1).toString());}
             else{$('.currIndex').html(currIndex + 1);}
         }
     }
