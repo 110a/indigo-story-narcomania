@@ -14,7 +14,7 @@ $('.sound').value = 0;
 function playList() {
     var quantity = audioArr.length;
     for (let i=0; i< quantity; i++){
-        if(i+1>=8){
+        if(i+1>=9){
             $('.audio-files ul').append("<li class='for-nav'><p data-src='"+audioArr[i].src+"'>"+$(audioArr[i]).attr("data-name")+" <span>"+([i+1])+"</span></p></li>");
         }
         else {
@@ -75,6 +75,10 @@ $('.audio-files ul li.for-nav p').click(function () {
 
     $('.audio-files p').removeClass('active-title');
     $(this).addClass('active-title');
+    var translate = ((currIndex+1) * 2);
+    var translateContent = (currIndex * 10);
+    $(".bg-images").css("transform","translate(" + -translate + "%,0px)");
+    $(".slider").css("transform","translate(" + -translateContent + "%,0px)");
     for(var i = 0; i<audioArr.length; i++){
         $(imageArr[i]).removeClass("active-Id");
         if((audioArr[i].src).includes($(this).attr("data-src"))){
