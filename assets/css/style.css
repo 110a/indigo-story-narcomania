@@ -246,8 +246,9 @@ figure img {
     right: 0;
 }
 
-/* .circle-play{
-    position: absolute;
+
+.circle-play{
+    position: fixed;
     cursor: default;
     opacity: 1;
     top: 50%;
@@ -263,8 +264,14 @@ figure img {
     -ms-transition: opacity 1000ms;
     -o-transition: opacity 1000ms;
     transition: opacity 1000ms;
-} */
-
+}
+.circle-play:hover {
+  opacity: 0.6;
+}
+.circle-play img {
+  width: 100px;
+  cursor: pointer;
+}
 .circle{
     width: 80px;
     height: 80px;
@@ -1151,7 +1158,7 @@ header {
 .playlistButton.active span:nth-of-type(3) {
     transform: rotate(-45deg) translate(6px, -4px);
 }
-.circle-play {
+/* .circle-play {
     animation: bounce;
      animation: bounce 1s;
   animation-direction: alternate;
@@ -1163,7 +1170,7 @@ header {
   0% { transform: translate3d(0, -200px, 0);     }
   50%   { transform: translate3d(0px, 200px, 0px); }
   100%   { transform: translate3d(0px, 0px, 0px); }
-}
+} */
 
 .control {
     width: 40px;
